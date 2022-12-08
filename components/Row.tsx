@@ -15,7 +15,7 @@ function Row({title,movies}:Props) {
             <ChevronLeftIcon className="absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100"/>
 
         <div className=" flex items-center scrollbar-hide space-x-0.5 overflow-x-scroll md:space-x-2.5 md:p-2">
-            {movies.map((movie)=>(
+            {movies?.map((movie)=>(
                 <Thumbnail key={movie.id} movie={movie}/>
             ))}
         </div>
